@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/colorGrey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ImageView
+            android:id="@+id/image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintWidth_percent="1"
+            app:layout_constraintHeight_percent="0.28"
+            android:src="@drawable/loging_shopping"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+    />
+
+
+    <LinearLayout
+            android:id="@+id/tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+    >
+        <TextView
+                    android:id="@+id/password"
+                android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="RASHID"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorRed"
+        />
+
+        <TextView
+                android:id="@+id/sms"
+                android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="HOSPITAL"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp" />
+        <TextView
+            android:id="@+id/sms2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/box"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tabs"
+            app:layout_constraintWidth_percent="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/white_bg_round_corner_shadow"
+    >
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="User Name"
+                  android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp" />
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginStart="15dp"
+                      android:layout_marginEnd="15dp"
+                      android:orientation="horizontal">
+
+
+            <EditText android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="5dp"
+                      android:id="@+id/editTextLoginUserName"
+                      android:background="@android:color/transparent"
+                android:layout_marginLeft="5dp" />
+
+        </LinearLayout>
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:layout_marginTop="8dp"
+              android:layout_marginStart="15dp"
+              android:layout_marginEnd="15dp"
+              android:background="@color/colorRed"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginStart="15dp"
+                  android:text="User Password"
+
+            android:layout_marginLeft="15dp" />
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="2dp"
+                      android:layout_marginStart="15dp"
+                      android:layout_marginEnd="15dp"
+                      android:orientation="horizontal">
+
+
+            <EditText android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      android:paddingTop="2dp"
+                android:inputType="textPassword"
+                android:id="@+id/editTextLoginPassword"
+
+                android:paddingBottom="2dp"
+                      android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:layout_marginTop="8dp"
+              android:layout_marginStart="15dp"
+              android:layout_marginEnd="15dp"
+              android:background="@color/colorRed"/>
+
+        <Button
+
+                android:id="@+id/buttonLogin"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/primary_bg_round_corner"
+                android:text="Log In"
+                android:textSize="16dp"
+                android:textColor="@color/colorWhite"
+                android:padding="6dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+        />
+
+    </LinearLayout>
+
+
+    <TextView
+
+        android:id="@+id/textViewSignUp"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/primary_bg_round_corner"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="Sign UP"
+        android:textColor="@color/colorWhite"
+
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/box"
+        app:layout_constraintWidth_percent="0.6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
